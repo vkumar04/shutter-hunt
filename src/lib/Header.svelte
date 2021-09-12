@@ -4,7 +4,7 @@
 
 <style>
   h1{
-    font-size: 36px;
+    font-size: 64px;
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #f44336;
