@@ -1,12 +1,11 @@
 <script>
   export let item
-  export let index
   export let deleteItem
 </script>
 
 <div>
   <div class="itemContainer">
-        <p class="item">{item}</p><span class="delete" on:click={deleteItem(index)}>X</span>
+        <p class="item">{item}</p><span class="delete" on:click={deleteItem(item)}>X</span>
   </div>
 </div>
 

@@ -1,14 +1,14 @@
 <script>
   import ListItem from './ListItem.svelte'
   let emotion = '';
-  let emotionArray = []
+  export let emotionArray
   function handleClick() {
     emotionArray = [...emotionArray, emotion]
     emotion = ''
   }
 
   function deleteEmotion(i) {
-    const filteredEmotion = emotionArray.filter(item => item === i)
+    const filteredEmotion = emotionArray.filter(index => index !== i)
     emotionArray = filteredEmotion
   }
 </script>

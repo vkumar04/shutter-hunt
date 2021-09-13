@@ -1,14 +1,14 @@
 <script>
   import ListItem from './ListItem.svelte'
   let item = '';
-  let itemArray = []
+  export let itemArray
   function handleClick() {
     itemArray = [...itemArray, item]
     item = ''
   }
 
   function deleteItem(i) {
-    const filteredItems = itemArray.filter(item => item === i)
+    const filteredItems = itemArray.filter(index => index !== i)
     itemArray = filteredItems
   }
 </script>

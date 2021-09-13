@@ -3,14 +3,17 @@
   import EmotionList from "./lib/EmotionList.svelte";
   import ItemList from "./lib/ItemList.svelte";
   import CombineList from "./lib/CombineList.svelte";
+
+  let itemArray = []
+  let emotionArray = []
 </script>
 
 <main>
   <Header />
   <div class="container">
-    <EmotionList />
+    <EmotionList emotionArray={emotionArray} />
     <CombineList />
-    <ItemList />
+    <ItemList itemArray={itemArray}/>
   </div>
 </main>
 
