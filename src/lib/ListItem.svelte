@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
   }
   .delete{
     color: #f44336;
